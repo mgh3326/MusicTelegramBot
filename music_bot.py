@@ -51,7 +51,7 @@ class Student:
 
 
 if __name__ == "__main__":
-    with open("secret.json") as f:
+    with open("./config/secret.json") as f:
         data = json.load(f)
     bot = telepot.Bot(data["telepot_key"])
     bot.message_loop(handle)
